@@ -1,0 +1,68 @@
+
+body{
+    font-size: 16px;
+    margin:0;
+}
+header{
+    align-items:center;
+    background: lightblue;
+    display:flex;
+    height: 50px;;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;;
+}
+footer{
+    align-items: center;
+    background: lightcoral;
+    display: flex;
+    height: 50px;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+#boton{
+    position: absolute;
+    background: darkgoldenrod;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 30px;
+    left:15px;
+    top: 1rem;
+    width: 30px;
+    z-index: 20;
+}
+#boton .boton{
+    content: "1";
+}
+#menu, #principal{
+    height: calc(100vh - 100px);
+    padding: 1rem 15px;
+}
+#menu{
+    background: lightslategray;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    transition: .6s ease-in;
+    width: 33.3333%;
+}
+#principal{
+    background: lightcyan;
+    width: 100%;
+}
+.footer__autor{
+    display:flex;
+    justify-content: flex-end;
+}
+
+/*CLASE*/
+.fila{
+    display: flex;
+    position: relative;
+}
+.ancho{
+    width: 60px !important;
+}
+
