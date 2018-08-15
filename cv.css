@@ -1,11 +1,17 @@
-
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 body{
+    background:#EAEBED;
+    color: #404040;
+    font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     margin:0;
 }
 header{
     align-items:center;
-    background: lightblue;
+    background: #006989;
+    color: #FFF;
     display:flex;
     height: 50px;;
     position: sticky;
@@ -15,7 +21,8 @@ header{
 }
 footer{
     align-items: center;
-    background: lightcoral;
+    background: #007090;
+    color: #FFF;
     display: flex;
     height: 50px;
 }
@@ -24,32 +31,64 @@ h1,h2,h3,h4,h5,h6{
 }
 #boton{
     position: absolute;
-    background: darkgoldenrod;
     cursor: pointer;
     border-radius: 50%;
     height: 30px;
-    left:15px;
+    left:30px;
     top: 1rem;
     width: 30px;
     z-index: 20;
+}
+#boton .botones{
+    background: #202C39;
+    height: 5px;
+    margin: 5px 0;
+    width: 100%;;
 }
 #boton .boton{
     content: "1";
 }
 #menu, #principal{
-    height: calc(100vh - 100px);
-    padding: 1rem 15px;
+    height: calc(100vh - 100px); /*Se resta altura de header y footer*/
+    padding: 1rem 30px;
 }
 #menu{
-    background: lightslategray;
+    background:#01A7C2;
     display:flex;
     align-items: center;
-    justify-content:center;
-    transition: .6s ease-in;
+    justify-content:flex-start;
+    transition: width .6s ease-in;
     width: 33.3333%;
 }
+#menu__article
+{
+    opacity: 1;
+    transition: .5s .1s;
+    transform: translateX(0);
+    width: 100%;
+}
+#menu__article ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu__article li{
+    display: block;
+}
+#menu__article a{
+    color: #FFF;
+    display: block;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-decoration: none;
+    transition: .4s;
+    width: inherit;
+}
+#menu__article a:hover{
+    transform: translateX(20px);
+}
 #principal{
-    background: lightcyan;
+    background:#EAEBED;
     width: 100%;
 }
 .footer__autor{
@@ -58,11 +97,30 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*CLASE*/
+.container-fluid{
+    padding-left:30px;
+    padding-right: 30px;
+    width: 100%;
+}
+.sociales{
+    background: red;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+}
 .fila{
     display: flex;
     position: relative;
 }
 .ancho{
-    width: 60px !important;
+    width: 90px !important;
 }
-
+.desplazar{
+    transform: translateX(-100px) !important;
+}
+.reset-x{
+    transform: translateX(0) !important;
+}
