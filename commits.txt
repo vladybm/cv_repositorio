@@ -1,0 +1,28 @@
+commit 7d75574259e0a1c43b491935fe2b99304527805b
+Author: vladynator <ismael.benitez@salud-digna.org>
+Date:   Wed Aug 15 10:29:37 2018 -0600
+
+    Se modificaron archivos principales y se agregaron iconos e imagenes
+
+commit 68d36c04da6b1e395f887a81a2fa93fb25550dfa
+Merge: 34f363b ccaa2b8
+Author: Ismael Vladimir Benítez Miranda <ismael.benitez@salud-digna.org>
+Date:   Mon Aug 13 23:21:29 2018 +0000
+
+    Merge branch 'RamaVlady' into 'master'
+    
+    nueva clase
+    
+    See merge request vladynator/cv!1
+
+commit ccaa2b8d0e584f723bf0f341982ab89a7f565606
+Author: vladynator <ismael.benitez@salud-digna.org>
+Date:   Mon Aug 13 17:19:36 2018 -0600
+
+    nueva clase
+
+commit 34f363b856ef6f0d7f526cc309e099a49ff90f22
+Author: vladynator <ismael.benitez@salud-digna.org>
+Date:   Mon Aug 13 17:12:16 2018 -0600
+
+    primer commit
